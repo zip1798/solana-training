@@ -12,6 +12,12 @@
   "dependencies": {
     "@solana-developers/helpers": "^2.3.0",
     "@solana/web3.js": "^1.91.8",
-    "esrun": "^3.2.26"
+    "bs58": "^5.0.0",
+    "esrun": "^3.2.26",
+    "log-update": "^6.0.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.32"
   }
 }
