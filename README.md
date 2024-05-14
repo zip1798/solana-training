@@ -19,3 +19,8 @@ npx esrun check-balance.ts
 ```
 npx esrun key-generator.ts --starts=zip
 ``` 
+
+## Lesson 3 - Send sol
+```
+npx esrun send-sol.ts
+```
