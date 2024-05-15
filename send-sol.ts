@@ -7,7 +7,8 @@ import {
   Transaction,
   clusterApiUrl,
   Connection,
-  sendAndConfirmTransaction
+  sendAndConfirmTransaction,
+  TransactionInstruction
 } from "@solana/web3.js";
 
 const sender = getKeypairFromEnvironment("SECRET_KEY");
@@ -32,8 +33,26 @@ const sendSolInstruction = SystemProgram.transfer({
 
 transaction.add(sendSolInstruction);
 
+// Get this address from https://spl.solana.com/memo
+const memoProgram = new PublicKey(
+  "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr"
+);
+
+const memoText = "Hello from Solana!";
+
+const addMemoInstruction = new TransactionInstruction({
+  keys: [{ pubkey: sender.publicKey, isSigner: true, isWritable: true }],
+  data: Buffer.from(memoText, "utf-8"),
+  programId: memoProgram,
+});
+
+transaction.add(addMemoInstruction);
+
+console.log(`📝 memo is ${memoText}...`);
+
 const signature = await sendAndConfirmTransaction(connection, transaction, [
   sender,
 ]);
 
 console.log(`✅ Transaction confirmed, signature: ${signature}!`);
+
