@@ -19,22 +19,22 @@ const tokenMintAccount = new PublicKey(
 
 // Subtitute in a recipient token account you just made
 const recipientAssociatedTokenAccount = new PublicKey(
-    "FSnxSitg4Xr74VGYDrY3kjhoQHob3YKuxY21LuLGw6xP"
-  );
-  
-  const transactionSignature = await mintTo(
-    connection,
-    sender,
-    tokenMintAccount,
-    recipientAssociatedTokenAccount,
-    sender,
-    8888 * MINOR_UNITS_PER_MAJOR_UNITS
-  );
-  
-  const link = getExplorerLink("transaction", transactionSignature, "devnet");
-  
-  console.log(`✅ Success! Mint Token Transaction: ${link}`);
+  "FSnxSitg4Xr74VGYDrY3kjhoQHob3YKuxY21LuLGw6xP"
+);
+
+const transactionSignature = await mintTo(
+  connection,
+  sender,
+  tokenMintAccount,
+  recipientAssociatedTokenAccount,
+  sender,
+  8888 * MINOR_UNITS_PER_MAJOR_UNITS
+);
+
+const link = getExplorerLink("transaction", transactionSignature, "devnet");
+
+console.log(`✅ Success! Mint Token Transaction: ${link}`);
 
 /**
- * 
- */
+* 
+*/
