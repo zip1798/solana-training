@@ -2,6 +2,9 @@
 
 ## Info
 - [Presentation](https://docs.google.com/presentation/d/1ioDlrqPk5ghKIGAHoiAjG7PoLAPQomGeVE6xQfJk2LA/edit#slide=id.p62)
+- [Solana SPL Documentation](https://solana-labs.github.io/solana-program-library/token/js/index.html)
+- [Example Partial Sign Transaction in solanacookbook](https://solanacookbook.com/references/offline-transactions.html#partial-sign-transaction)
+- [Second example](https://blogs.shyft.to/how-to-sign-transactions-on-solana-aa73513c8cd2)
 
 Install
 ```
