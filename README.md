@@ -48,3 +48,22 @@ Mint some tokens for token account
 npx esrun ./Lesson4/mint-tokens.ts
 ```
 
+#### Homework
+Create mulisig authority for token mint
+```
+npx esrun ./Homework/4-1-multisig-mint-tokens.ts
+```
+
+
+Partial sign of transaction
+```
+npx esrun ./Homework/4-2-partial-sign-transaction.ts
+```
+
+Partial sign of transaction with durable nonce
+```
+npx esrun ./Homework/4-3-nonce-sign-transaction.ts
+```
+
+
+
