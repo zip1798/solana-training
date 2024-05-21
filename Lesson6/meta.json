@@ -1,0 +1,15 @@
+{
+    "name": "Bootcamp Token",
+    "symbol": "BCT",
+    "description": "Example Token for Solana Bootcamp",
+    "image": "https://teal-naval-condor-252.mypinata.cloud/ipfs/QmRsto9t76CnfLQN17RJrGSfdzev9n2Ho9hWz2sLedS32s",
+    "attributes": [],
+    "properties": {
+      "files": [
+        {
+          "uri": "https://teal-naval-condor-252.mypinata.cloud/ipfs/QmRsto9t76CnfLQN17RJrGSfdzev9n2Ho9hWz2sLedS32s",
+          "type": "image/png"
+        }
+      ]
+    }
+  }
