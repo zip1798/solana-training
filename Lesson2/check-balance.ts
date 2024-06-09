@@ -4,6 +4,7 @@ import {
   LAMPORTS_PER_SOL,
   PublicKey,
   clusterApiUrl,
+  SystemProgram
 } from "@solana/web3.js";
 
 import {
@@ -32,3 +33,4 @@ const balanceInSOL = balanceInLamports / LAMPORTS_PER_SOL;
 console.log(
   `💰 Finished! The balance for the wallet at address ${publicKey} is ${balanceInSOL}!`
 );
+
