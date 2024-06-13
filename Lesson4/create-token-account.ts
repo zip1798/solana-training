@@ -15,7 +15,7 @@ console.log(
 
 // Subtitute in your token mint account from create-token-mint.ts
 const tokenMintAccount = new PublicKey(
-    "gxqs2jApgRZRaJYYbboqFFvwvXAyMb9oicutbKku5CB"
+    "AjVTGh5ko5Mzw7FEn7tRwKFqY86cEBExaMaktDDgydKd", // "gxqs2jApgRZRaJYYbboqFFvwvXAyMb9oicutbKku5CB"
 );
   
 // Subtitute in a recipient from addresses.ts
